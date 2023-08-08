@@ -143,9 +143,9 @@ def get_numpad(font=("Arial", 14), bg="#FFFFFF", fg="#000000"):
     calculatorbutton.Button(frm_numpad, text="*", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=add_number).grid(row=3, column=3, sticky="news")
     calculatorbutton.Button(frm_numpad, text="/", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=add_number).grid(row=4, column=3, sticky="news")
     calculatorbutton.Button(frm_numpad, text="=", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=calculate_sum).grid(row=4, column=2, sticky="news")
-    calculatorbutton.Button(frm_numpad, text="delete", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=delete_sum).grid(row=4, column=0, sticky="news")
-    calculatorbutton.Button(frm_numpad, text="Square root", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=lambda: sqaure_root(txt.get())).grid(row=5, column=0, sticky="news")
-    calculatorbutton.Button(frm_numpad, text="Clear", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=lambda: txt.delete(0, END)).grid(row=5, column=3, sticky="news")
+    calculatorbutton.Button(frm_numpad, text="D", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=delete_sum).grid(row=4, column=0, sticky="news")
+    calculatorbutton.Button(frm_numpad, text="Sqrt", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=lambda: sqaure_root(txt.get())).grid(row=5, column=0, sticky="news")
+    calculatorbutton.Button(frm_numpad, text="C", font=font, bg=bg, fg=fg, activebg="#F0F0F0", activefg="#000000", command=lambda: txt.delete(0, END)).grid(row=5, column=3, sticky="news")
     frm_numpad.rowconfigure(4, weight=1)
     frm_numpad.columnconfigure(1, weight=1)
     for i in range(1, 4):
